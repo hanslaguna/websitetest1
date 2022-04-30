@@ -54,27 +54,6 @@ body {background-color: #f0e8dd;}
 }
 
 
-.button--pandora {
-	background: #000;
-	font-weight: 700;
-	padding: 0;
-	border-radius: 5px;
-}
-
-.button--pandora span {
-	display: block;
-	background: #b47860;
-	padding: 1.5rem 2rem;
-	border: 1px solid #000;
-	border-radius: 5px;
-	transform: translate3d(-4px, -4px, 0);
-	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
-}
-
-.button--pandora:hover span {
-	transform: translate3d(-8px, -8px, 0);
-}
-
 
 /* bestia */
 
@@ -106,7 +85,7 @@ body {background-color: #f0e8dd;}
 .button--bestia .button__bg::after {
 	content: '';
 	position: absolute;
-	background: #000;
+	background: #004857;
 }
 
 .button--bestia .button__bg::before {
@@ -147,93 +126,6 @@ body {background-color: #f0e8dd;}
 }
 
 
-/* kari */
-
-.button--kari {
-    background: #b47860;
-	border-radius: 50%;
-	border: 2px solid #000;
-}
-
-.button--kari > span {
-	display: inline-block;
-	transition: opacity 0.1s;
-   
-}
-
-.button--kari:hover > span {
-	opacity: 0;
-}
-
-.button--kari .marquee {
-	transform: rotate(-2.75deg);
-}
-
-.button--kari:hover .marquee__inner {
-	animation-play-state: running;
-	opacity: 1;
-	transition-duration: 0.6s;
-    color: #f0e8dd;
-    
-}
-
-.button--kari:hover a {
-	animation-play-state: running;
-	opacity: 0;
-	transition-duration: 0.6s;
-    
-    
-}
-
-
-.marquee {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	pointer-events: none;
-}
-
-.marquee__inner {
-	width: fit-content;
-	display: flex;
-	position: relative;
-	--offset: 1rem;
-	--move-initial: calc(-25% + var(--offset));
-	--move-final: calc(-50% + var(--offset));
-	transform: translate3d(var(--move-initial), 0, 0);
-	animation: marquee 1s linear infinite;
-	animation-play-state: paused;
-	opacity: 0;
-}
-
-.button--atlas:hover .marquee__inner {
-	animation-play-state: running;
-	opacity: 1;
-	transition-duration: 0.4s;
-}
-
-.marquee span {
-	text-align: center;
-	white-space: nowrap;
-
-	padding: 1.5rem 0.5rem;
-}
-
-@keyframes marquee {
-	0% {
-		transform: translate3d(var(--move-initial), 0, 0);
-	}
-
-	100% {
-		transform: translate3d(var(--move-final), 0, 0);
-	}
-}
-
-
-
-
 h1{
 font-family: omnesblack;
 text-align: center;
@@ -251,72 +143,73 @@ li {
     list-style-type: none;
 }
 .container{
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
   text-align: center;
+}
+.img_container{
+text-align: center;
+}
+.tree{
+	position: fixed;
+ 	bottom: 0;
+  	left: 0;
+	width: 25%;
+	height: auto;
 }
 
 
 </style>
 </head>
 <body>
-    <br><br><br>
-<h1>Slush Stoodios Links (pandora buttons)</h1>
+    <br><br><br><br>
+
+<div class="img_container">
+	<img src="images/slushstudios_full_logo.png" alt="main logo" class="logo" width="450px">
+</div>
 
 
 <div class="container"> 
 
     <br><br><br><br><br>
-    <li class="content__item">
-        <button class="button button--pandora"><a href="index.html"><span>Website</span></a></button>
-    </li><br><br>
+	<li class="content__item">
+		<button class="button button--bestia">
+			<div class="button__bg"></div><a href="index.html"><span>Website</span></a>
+		</button>
+	</li><br><br>
+	<li class="content__item">
+		<button class="button button--bestia">
+			<div class="button__bg"></div><a href="https://www.instagram.com/slushstoodios/"><span>Instagram</span></a>
+		</button>
+	</li><br><br>
+	<li class="content__item">
+		<button class="button button--bestia">
+			<div class="button__bg"></div><a href="https://web.facebook.com/slushstoodios"><span>Facebook</span></a>
+		</button>
+	</li><br><br>
+	<li class="content__item">
+		<button class="button button--bestia">
+			<div class="button__bg"></div><a href="https://www.linkedin.com/company/slush-stoodios/"><span>LinkedIn</span></a>
+		</button>
+	</li><br><br>
+	<li class="content__item">
+		<button class="button button--bestia">
+			<div class="button__bg"></div><a href="#"><span>Work With Us!</span></a>
+		</button>
+	</li><br><br>
 
-    <li class="content__item">
-        <button class="button button--pandora"><a href="https://www.instagram.com/slushstoodios/"><span>Instagram</span></a></button>
-    </li><br><br>
-
-    <li class="content__item">
-        <button class="button button--pandora"><a href="https://web.facebook.com/slushstoodios"><span>Facebook</span></a></button>
-    </li><br><br>
-
-    <li class="content__item">
-        <button class="button button--pandora"><a href="https://www.linkedin.com/company/slush-stoodios/"><span>LinkedIn</span></a></button>
-    </li><br><br>
-
-    <li class="content__item">
-        <button class="button button--pandora"><a href="#"><span>Contact Us</span></a></button>
-    </li><br><br>
-<!-- 
-
- -->
- <h1>Slush Stoodios Links (locate buttons)</h1>
- <li class="content__item">
-    <button class="button button--bestia">
-        <div class="button__bg"></div><a href="#"><span>Website</span></a>
-    </button>
-</li><br><br>
-
-<h1>Slush Stoodios Links (Send love buttons)</h1>
-
-<li class="content__item">
-    <button class="button button--kari">
-        <a href="#"><span>Website</span>
-        <div class="marquee" aria-hidden="true">
-            <div class="marquee__inner">
-                <span>Website</span>
-                <span>Website</span>
-                <span>Website</span>
-                <span>Website</span>
-            </div>
-        </div>
-    </a>
-    </button>
-</li>
 
 </div>
 
+<footer>
+	<div class="tree_container">
+		<img src="images/tree.PNG" alt="tree" class="tree">
+	</div>
+	
+
+</footer>
 
 
 </body>
