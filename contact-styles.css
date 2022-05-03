@@ -70,8 +70,7 @@ body{
 
 .contact-title{
     text-align: center;
-    font-family: omnes-georgian, sans-serif;
-    font-weight: 500;
+    font-family: omnes, sans-serif;
     font-style: normal;
     padding: 40 40 40 40;
 }
@@ -82,8 +81,7 @@ body{
 }
 
 form{
-font-family: omnes-georgian, sans-serif;
-font-weight: 500;
+font-family: omnes, sans-serif;
 font-style: normal;
 }
 
