@@ -16,15 +16,21 @@
 }
 
 @font-face {
-    font-family: 'omnes_regular';
-    src: url('fonts/omnes-regular-webfont.woff2') format('woff2'),
-         url('fonts/omnes-regular-webfont.woff') format('woff');
+    font-family: 'omnes';
+    src: url('fonts/omnes.woff2') format('woff2'),
+         url('fonts/omnes.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
     --teal: #026c82;
     --blue: #074a74;
@@ -67,8 +73,8 @@ body{
     transition: 0.5s;
 }
 .jumbo-container h1{
-    font-family: omnes-georgian, sans-serif;
-    font-weight: 600;
+    font-family: omnes, sans-serif;
+    font-weight:600;
     font-style: normal;
 }
 
@@ -81,9 +87,8 @@ body{
         
     }
     .jumbo-container h1{
-        font-family: omnes-georgian, sans-serif;
+        font-family: omnes, sans-serif;
         font-weight: 600;
-        font-style: normal;
         font-size: 33px;
     }
 }
@@ -119,8 +124,8 @@ body{
 .pod-text h1{
     font-size: 20px;
     color: var(--creamlight);
-    font-family: omnes-georgian, sans-serif;
-    font-weight: 500;
+    font-family: omnes, sans-serif;
+    font-weight: 600;
     font-style: normal;
     padding-bottom: 10;
 }
