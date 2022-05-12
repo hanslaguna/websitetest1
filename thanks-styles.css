@@ -84,9 +84,16 @@ body{
     text-align: center;
     font-family: omnes, sans-serif;
     font-style: normal;
-    font-size: 25px;
+    font-size: 24px;
     color: var(--creamlight);
     transition:0.5s;
+}
+.thanks-text a{
+    padding: 10 10 10 10;
+    text-decoration:none;
+    color: var(--brown);
+    background-color: var(--cream);
+    border-radius: 25px;
 }
 
 @media screen and (max-width: 1024px){
@@ -95,13 +102,13 @@ body{
         height: 40%;
         margin: auto;
         background-color: var(--brown);
-        padding-top: 60px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         border-radius: 30px;
         transition:0.5s;
     
     }
     .thanks-text{
-        padding-top: 50;
         text-align: center;
         font-family: omnes, sans-serif;
         font-style: normal;
@@ -109,6 +116,7 @@ body{
         color: var(--creamlight);
         transition:0.5s;
     }
+
 }
 
 @media screen and (max-width: 767px){
@@ -117,12 +125,13 @@ body{
         height: 40%;
         margin: auto;
         background-color: var(--brown);
-        padding-top: 60px;
+        padding-top: 10;
+        padding-bottom: 10;
         border-radius: 30px;
         transition:0.5s;
     }
     .thanks-text{
-        padding-top: 50;
+
         text-align: center;
         font-family: omnes, sans-serif;
         font-style: normal;
