@@ -86,20 +86,33 @@
               </select>
             </div>
             <div class="col">
-              <label for="Budget">what is your target budget?</label><span>&nbsp *</span>
+              <label for="Budget">target budget?</label><span>&nbsp *</span>
               <input type="text" class="form-control" id="Budget" name="budget" required>
             </div>
           </div>
           <!-- freeform edit -->
           <input type="hidden" name="_subject" value="Slush Stoodios Inquiry">
           <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://www.google.com/">
+          <input type="hidden" name="_next" value="https://hanslaguna.github.io/websitetest1/thanks">
           <!--  -->
           <div class="button-container">
             <button type="submit" id="submit" class="btn btn-primary">Submit</button>
           </div>
       </form>
     </div>
+
+
+      <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Please fill out all fields in the form</p>
+    </div>
+
+  </div>
+
 
         <div class="footer-basic">
           <footer>
@@ -118,7 +131,44 @@
           </footer>
       </div>
 
+<script>
+    // Get the modal
+  var modal = document.getElementById("myModal");
 
+  // Get the button that opens the modal
+  var btn = document.getElementById("submit");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+
+  btn.onclick = function() {
+    if( document.getElementById('FullName').value != '' &&
+        document.getElementById('EmailAddress').value != '' &&
+        document.getElementById('BusinessName').value != '' &&
+        document.getElementById('SocialMediaPage').value != '' &&
+        document.getElementById('AbtBusiness').value != '' &&
+        document.getElementById('BrandGoal').value != '' &&
+        document.getElementById('ChooseService').value != '' &&
+        document.getElementById('Budget').value != '') {
+
+    } else {
+      modal.style.display = "block";
+    }
+}
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
