@@ -36,48 +36,48 @@
     <h1 class="contact-title">work with us !!</h1>
 
     <div class="form-container">
-      <form action="https://formspree.io/f/xjvlplaz" method="POST">
+      <form id="slush-form" action="https://formsubmit.co/7b84c9bf966cbbadcb6af897679aee90" method="POST">
             <div class="form-row">
               <div class="col">
                 <label for="FullName">full name</label><span>&nbsp *</span>
-                <input type="text" class="form-control"  id="FullName" name="full-name">
+                <input type="text" class="form-control"  id="FullName" name="full-name" required>
               </div>
               <div class="col">
                 <label for="EmailAddress">email address</label><span>&nbsp *</span>
-                <input type="text" class="form-control" id="EmailAddress" name="email-address">
+                <input type="text" class="form-control" id="EmailAddress" name="email-address" required>
               </div>
             </div>
       
           <div class="form-group">
             <label for="BusinessName">business name</label><span>&nbsp *</span>
-            <input type="text" class="form-control" id="BusinessName" name="business-name">
+            <input type="text" class="form-control" id="BusinessName" name="business-name" required>
           </div>
           
           <div class="form-group">
             <label for="SocialMediaPage">social media page</label><span>&nbsp *</span>
-            <input type="text" class="form-control" id="SocialMediaPage" name="social-media-page">
+            <input type="text" class="form-control" id="SocialMediaPage" name="social-media-page" required>
             <small> Please Indicate as N/A if you don't have a page/website yet</small>
           </div>
 
           <div class="form-group">
             <label for="AbtBusiness">about the business & target audience/market</label><span>&nbsp *</span>
             <div class="placeholder-small">
-              <textarea class="form-control" name="target-audience" id="AbtBusiness" rows="5" placeholder="Tell us more about your business, why, how it started, and why you're passionate about it. Kindly speciffy your age gender, social status, etc. Literally anything that would help me get to know you and your business."></textarea>
+              <textarea required class="form-control" name="target-audience" id="AbtBusiness" rows="5" placeholder="Tell us more about your business, why, how it started, and why you're passionate about it. Kindly speciffy your age gender, social status, etc. Literally anything that would help me get to know you and your business."></textarea>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="AbtBusiness">what is your goal for your brand?</label><span>&nbsp *</span>
+            <label for="BrandGoal">what is your goal for your brand?</label><span>&nbsp *</span>
             <div class="placeholder-small">
-              <textarea class="form-control" name="brand-goal" id="AbtBusiness" rows="5" placeholder="What are your brand goals? How do you describe your brand visually? Share your Pinterest board link?"></textarea>
+              <textarea required class="form-control" name="brand-goal" id="BrandGoal" rows="5" placeholder="What are your brand goals? How do you describe your brand visually? Share your Pinterest board link?"></textarea>
             </div>
           </div>
 
           <div class="form-row">
             <div class="col">
-              <label for="ChooseService">which serivce are you looking for?</label><span>&nbsp *</span>
-              <select id="ChooseService" class="form-control" name="service">
-                <option selected>...</option>
+              <label for="ChooseService">type of service?</label><span>&nbsp *</span>
+              <select required id="ChooseService" class="form-control" name="service" >
+                <option selected value="">...</option>
                 <option>SLUSH N' START</option>
                 <option>SLUSH N' GO</option>
                 <option>SLUSHIN' CONTENT</option>
@@ -87,11 +87,16 @@
             </div>
             <div class="col">
               <label for="Budget">what is your target budget?</label><span>&nbsp *</span>
-              <input type="text" class="form-control" id="Budget" name="budget">
+              <input type="text" class="form-control" id="Budget" name="budget" required>
             </div>
           </div>
+          <!-- freeform edit -->
+          <input type="hidden" name="_subject" value="Slush Stoodios Inquiry">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://www.google.com/">
+          <!--  -->
           <div class="button-container">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
           </div>
       </form>
     </div>
@@ -114,7 +119,6 @@
       </div>
 
 
-  
 
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
